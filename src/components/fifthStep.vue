@@ -3,7 +3,6 @@
         <div>Приложения</div>
         <input type="file"
         multiple
-        :value="task.files"
         @input="addFiles"/>
         <my-button @click.native="$router.push({name: 'Fourth'})">Назад</my-button>
         <my-button @click.native="setVisible">Создать</my-button>
