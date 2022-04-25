@@ -8,11 +8,11 @@ import Vue from 'vue';
 Vue.use(VueRouter)
 const router = new VueRouter({
     routes:[
-    {path:"/first", component: firstStep},
-    {path:"/second", component: secondStep},
-    {path:"/third", component: thirdStep},
-    {path:"/fourth", component: fourthStep},
-    {path:"/fifth", component: fifthStep}
+    {path:"/first", name:"First", component: firstStep},
+    {path:"/second", name:"Second", component: secondStep},
+    {path:"/third", name:"Third", component: thirdStep},
+    {path:"/fourth", name:"Fourth", component: fourthStep},
+    {path:"/fifth", name:"Fifth", component: fifthStep}
     ],
     mode:'history',
     base:process.env.BASE_URL
